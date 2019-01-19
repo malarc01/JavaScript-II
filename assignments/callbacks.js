@@ -54,19 +54,6 @@ function multiplyNums(x, y, cb) {
 multiplyNums(5,5,function(multiplyNums) {
         console.log(multiplyNums)
 });
-//
-//function contains(item, list, cb) {
-//    let input = list.include(item) ? true : false;
-//  return cb(input);
-//  // contains checks if an item is present inside of the given array/list.
-//  // Pass true to the callback if it is, otherwise pass false.
-//}
-//
-//console.log(contains());
-
-//
-//contains('Zoo',items, function(contains) {
-//    console.log(contains)});
 
 
 function contains(item, list, callback) {
@@ -76,9 +63,6 @@ function contains(item, list, callback) {
 }//wholefunction
 
 contains('odsg', items, function(contains){console.log(contains)});
-
-
-
 
 
 
