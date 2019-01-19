@@ -69,6 +69,18 @@ contains('Zoo',items, function(contains) {
     console.log(contains)});
 
 
+function contains(item, list, callback) {
+  for (let i = 0; i < list.length; i++) {
+    if (item === list[i]) { return callback(true) }
+  }else{ return callback(false)}
+}//wholefunction
+
+contains('Zooooooo', list, function(test){console.log(test)});
+
+
+
+
+
 
 
 /* STRETCH PROBLEM */
