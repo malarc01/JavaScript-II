@@ -1,26 +1,41 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
- let global = 3
-function encap(x) {
-  let answer = x + 2
- return answer
-}
- let value = encap(global)
- console.log(value)
+ const foo = 'bar';
+ function returnFoo () {
+     return foo
+ }
+returnFoo();
+
 
 
 // ==== Challenge 2: Create a counter function ====
-const counter = theCount(input) {
-  console.log(input + 1)  
+const counter = () => {
+    let count = 0;
+    return function() {
+        count = count + 1;
+        return count;        
+    }
 };
+
+
+const newCounter = counter();
+console.log(newCounter());
+console.log(newCounter());
+console.log(newCounter());
+
+//const counter = theCount(input) {
+//  console.log(input + 1)  
+//};
   // Return a function that when invoked increments and returns a counter variable.
 
-counter(1);
-counter();
 
-Example usage: const newCounter = counter();
-newCounter(); // 1
-newCounter(); // 2
+
+//counter();
+//counter();
+//
+//Example usage: const newCounter = counter();
+//newCounter(); // 1
+//newCounter(); // 2
 
 
 
